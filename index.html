@@ -140,16 +140,16 @@ li a:hover {
     <!-- background text-->
     <div class="background-text">
         <h1 style="font-size:40px">I am Adrian Pichardo</h1>
-        <h3>dont pet cat!</html></h3>
+        <h3>Don't click cat! ಠ_ಠ</html></h3>
     </div>
 
     <!-- gato -->
     <div>
-        <img onmouseover="zoom_in(this)" src="low-cat.gif" style="position:fixed;padding:7px;bottom:0;right:0;width: 150px;z-index:999; margin-top: 20%;" id="gato-gif">
+        <img onmouseup="mouseUp(this)" src="low-cat.gif" style="position:fixed;padding:7px;bottom:0;right:0;width: 150px;z-index:999; margin-top: 20%;" id="gato-gif">
         
         <!-- Grow gato -->
         <script>
-            function mouseUp() {
+            function mouseUp(obj) {
                 document.getElementById("gato-gif").style.width
                 var current_width= obj.style.width.substring(0, obj.style.width.length - 2)
                 var current_height= obj.style.height.substring(0, obj.style.height.length - 2)

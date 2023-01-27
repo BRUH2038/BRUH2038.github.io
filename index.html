@@ -146,6 +146,19 @@ li a:hover {
     <!-- gato -->
     <div>
         <img onmouseover="zoom_in(this)" src="low-cat.gif" style="position:fixed;padding:7px;bottom:0;right:0;width: 150px;z-index:999; margin-top: 20%;" id="gato-gif">
+        
+        <!-- Grow gato -->
+        <script>
+            function mouseUp() {
+                document.getElementById("gato-gif").style.width
+                var current_width= obj.style.width.substring(0, obj.style.width.length - 2)
+                var current_height= obj.style.height.substring(0, obj.style.height.length - 2)
+
+                current_width = Number(current_width) + Number(10);
+                obj.style.width = (current_width) + "px"
+            }
+
+        </script>
     </div>
 </div>
 

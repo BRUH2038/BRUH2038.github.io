@@ -149,21 +149,6 @@ li a:hover {
     </div>
 </div>
 
-<script>
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    async function zoom_in(obj){
-        var current_width= obj.style.width.substring(0, obj.style.width.length - 2)
-        var current_height= obj.style.height.substring(0, obj.style.height.length - 2)
-
-        current_width = Number(current_width) + Number(10);
-        obj.style.width = (current_width) + "px"
-        // obj.style.height= (current_height += 1) + "px"
-
-} 
-</script>
 
 </body>
 </html>
